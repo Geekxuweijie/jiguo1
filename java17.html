@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+        }
+
+         .outer{
+             width: 100%;
+             height: 100%;
+         }
+        .header{
+            width: 100%;
+            height: 400px;
+
+            min-width: 1000px;
+
+        }
+        .header-1{
+
+            height: 100px;
+
+            overflow: hidden;
+        }
+        .header-1 > div{
+            float: left;
+        }
+        .header-1-1{
+            width: 100%;
+
+            height: 100px;
+
+        }
+        .header-1-2{
+            width: 20%;
+            height: 100px;
+            margin-left: -100%;
+            position: relative;
+            bottom: -40px;
+
+        }
+        .header-1-2 > img{
+            width: 150px;
+            height: 60px;
+            float: right;
+
+        }
+        .header-1-3{
+            width: 20%;
+            height: 100px;
+
+            margin-left: -20%;
+        }
+        .header-1-1-1{
+            position: relative;
+            padding-left: 20%;
+            padding-right: 20%;
+            bottom: -50px;
+
+        }
+        .header-1-1-1>.item{
+            float: left;
+            margin-left: 5%;
+        }
+        .header-1-1-1>.item:hover{
+            color: orange;
+        }
+        .header-1-3> img,.register{
+            float: left;
+            margin-left: 30px;
+            position: relative;
+            bottom: -50px;
+        }
+        .register{
+            color: orange;
+            border: 1px solid orange;
+        }
+        .header-2{
+            width: 100%;
+            height: 300px;
+            background: url("../../resource/img2/original.jpg") repeat;
+            background-position: center;
+
+        }
+        .header-2-1{
+            width:20%;
+            height: 300px;
+
+            margin-left: 1000px;
+            min-width: 20%;
+            position: relative;
+
+        }
+        .header-2-1>.p1{
+            font-size: 20px;
+
+            color: white;
+            position: absolute;
+            top:30px;
+            left: 20px;
+
+        }
+        .header-2-1 >.la{
+            width: auto;
+            height: auto;
+            background: lightgray;
+            float: left;
+            margin-left: 20px;
+            color: white;
+            opacity: 0.3;
+            font-weight: bolder;
+           margin-top: 100px;
+        }
+
+
+        .p2{
+            color: white;
+            position: absolute;
+            bottom: 100px;
+        }
+        .la2{
+            width: 50%;
+            height: 10%;
+            background: red;
+            color: white;
+            text-align: center;
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+        }
+        .center-1{
+            width: 100%;
+            height: 400px;
+
+        }
+        .center-1-1{
+            width: 100%;
+            height: 40px;
+            /*padding-left: 17%;*/
+
+
+        }
+        .center-1-2{
+            width: 100%;
+            height: 400px;
+        }
+        .center-1-2>div{
+            width: 16%;
+            height: 90%;
+
+            margin-left: 0.6%;
+          float: left;
+        }
+        .item1{
+          position: relative;
+
+        }
+        .item1>img{
+
+            position: absolute;
+            top:40%;
+            right: 0;
+        }
+        .item2{
+
+        }
+
+        .item2-1{
+            position: relative;
+            width: 100%;
+            height: 50%;
+            background: url("../../resource/img2/hot9.jpg") no-repeat;
+            background-position: center;
+        }
+        .item2-1>div{
+            width: auto;
+            height: auto;
+            color: white;
+            background: red;
+            text-align: center;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+        }
+        .item2-2{
+           position: relative;
+        }
+        .item2-2>h3{
+            text-align: center;
+        }
+
+        .item2-2>div{
+            width: 50px;
+            height: 20px;
+            border: 1px solid  darkred;
+            text-align: center;
+            float: left;
+            margin-left: 60px;
+            color: darkred;
+        }
+        .item2-2>h5{
+            display: inline;
+            position: absolute;
+            margin-left: 40%;
+        }
+        .font{
+            color: darkred;
+        }
+
+        .item3{
+
+        }
+        .item3-1{
+            position: relative;
+            width: 100%;
+            height: 50%;
+            background: url("../../resource/img2/hot10.jpg") no-repeat;
+            background-position: center;
+        }
+        .item3-1>div{
+            width: auto;
+            height: auto;
+            color: gray;
+            background: yellow;
+            text-align: center;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+        }
+        .item3-2{
+            position: relative;
+        }
+        .item3-2>h3{
+            text-align: center;
+        }
+
+        .item3-2>div{
+            width: 50px;
+            height: 20px;
+            border: 1px solid  darkred;
+            text-align: center;
+            float: left;
+            margin-left: 60px;
+            color: darkred;
+        }
+        .item3-2>h5{
+            display: inline;
+            position: absolute;
+            margin-left: 40%;
+        }
+
+
+        .item4{
+
+        }
+        .item4-1{
+            position: relative;
+            width: 100%;
+            height: 50%;
+            background: url("../../resource/img2/hot11.jpg") no-repeat;
+            background-position: center;
+        }
+        .item4-1>div{
+            width: auto;
+            height: auto;
+            color: white;
+            background: red;
+            text-align: center;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+        }
+        .item4-2{
+            position: relative;
+        }
+        .item4-2>h3{
+            text-align: center;
+        }
+
+        .item4-2>div{
+            width: 50px;
+            height: 20px;
+            border: 1px solid  darkred;
+            text-align: center;
+            float: left;
+            margin-left: 60px;
+            color: darkred;
+        }
+        .item4-2>h5{
+            display: inline;
+            position: absolute;
+            margin-left: 40%;
+        }
+        .item5{
+
+        }
+        .item5-1{
+            position: relative;
+            width: 100%;
+            height: 50%;
+            background: url("../../resource/img2/hot12.jpg") no-repeat;
+            background-position: center;
+        }
+        .item5-1>div{
+            width: auto;
+            height: auto;
+            color: white;
+            background: red;
+            text-align: center;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+        }
+        .item5-2{
+            position: relative;
+        }
+        .item5-2>h3{
+            text-align: center;
+        }
+
+        .item5-2>div{
+            width: 50px;
+            height: 20px;
+            border: 1px solid  darkred;
+            text-align: center;
+            float: left;
+            margin-left: 60px;
+            color: darkred;
+        }
+        .item5-2>h5{
+            display: inline;
+            position: absolute;
+            margin-left: 40%;
+        }
+        .item6{
+            position: relative;
+        }
+        .item6>img{
+
+            position: absolute;
+            top:40%;
+            left: 0;
+        }
+        .center-2{
+            width: 100%;
+            height: 800px;
+
+
+        }
+        .center-2-1{
+            width: 100%;
+            height: 400px;
+
+
+        }
+        .top{
+            width: 100%;
+            height: 40px;
+
+            /*padding-left: 17%;*/
+        }
+        .center-2-1>div{
+            width: 16%;
+            height: 90%;
+
+            margin-left: 0.6%;
+            float: left;
+            margin-top: 20px;
+
+        }
+      .item>img{
+      }
+        .center-2-1>h5{
+
+
+        }
+        .center-2-2{
+            width: 100%;
+            height: 400px;
+            margin-top: -100px;
+
+        }
+        .foot{
+            width: 16%;
+            height:40px;
+        }
+        .center-2-2>div{
+            width: 16%;
+            height: 90%;
+
+            margin-left: 0.6%;
+            float: left;
+            margin-top: 20px;
+        }
+         h5{
+
+             display: inline;
+             margin-left: 40px;
+             color: gray;
+         }
+        h6{
+            display: inline;
+            color: gray;
+        }
+        .center-3{
+            width: 100%;
+            height: 400px;
+        }
+
+        .center-3 >.item-3-1{
+            width: 16%;
+            height: 90%;
+            margin-left: 0.6%;
+            float: left;
+
+        }
+        .center-4{
+            width: 100%;
+            height: 1600px;
+
+        }
+        .center-4 >.item-4-1{
+            width: 16%;
+            height: 24%;
+            margin-left: 0.6%;
+
+            float: left;
+
+        }
+        .footer{
+            width: 100%;
+            height: 400px;
+            background:black;
+        }
+        .footer>div{
+            float: left;
+            color: white;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="header">
+            <div class="header-1">
+                <div class="header-1-1">
+                    <div class="header-1-1-1">
+                        <div class="item">首页</div>
+                        <div class="item">酷玩</div>
+                        <div class="item">导购</div>
+                        <div class="item">试用</div>
+                        <div class="item">报告</div>
+                    </div>
+                </div>
+                <div class="header-1-2"><img src="../../resource/img2/logonew.png"></div>
+                <div class="header-1-3"><img src="../../resource/img2/search.png"><div class="register">注册</div></div>
+            </div>
+            <div class="header-2">
+                <div class="header-2-1">
+                    <p class="p1">幻响小贝HiFi2.1音箱</p>
+
+                    <div class="la">126人申请</div>
+                    <div class="la">¥599</div>
+                    <div class="la">20台</div>
+                    <br>
+                    <p class="p2">申请时间剩余：13天5小时37分钟</p>
+                    <div class="la2">立即申请</div>
+                    <div>
+                    </div>
+        </div>
+
+    </div>
+            <div class="center">
+                <div class="center-1">
+                    <div class="center-1-1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;热门试用</div>
+                    <div class="center-1-2">
+                        <div class="item1">
+                            <img src="../../resource/img2/prev.png">
+                        </div>
+                        <div class="item2">
+                            <div class="item2-1"><div>首发</div></div>
+                            <div class="item2-2">
+                                <h3>巴慕达 The Toaster 烤面包<br>机</h3>
+                                <div>¥599</div>
+                                <div>20台</div>
+                                <br>
+                                <h5 class="font">1392</h5><h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp申请</h5>
+                                <br>
+                                <h5 class="font">剩余时间2天</h5>
+                            </div>
+                        </div>
+                        <div class="item3">
+                            <div class="item3-1"><div>体验师专享</div></div>
+                            <div class="item3-2">
+                                <h3>Liquid Image 338 运动摄<br>像眼镜</h3>
+                                <div>¥599</div>
+                                <div>20台</div>
+                                <br>
+                                <h5 class="font">1392</h5><h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp申请</h5>
+                                <br>
+                                <h5 class="font">剩余时间2天</h5>
+                            </div>
+                        </div>
+                        <div class="item4">
+                            <div class="item4-1"><div>首发</div></div>
+                            <div class="item4-2">
+                                <h3>Osprey小鹰户外运动专业腰<br>包</h3>
+                                <div>¥599</div>
+                                <div>20台</div>
+                                <br>
+                                <h5 class="font">1392</h5><h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp申请</h5>
+                                <br>
+                                <h5 class="font">剩余时间2天</h5>
+                            </div>
+                        </div>
+                        <div class="item5">
+                            <div class="item5-1"><div>首发</div></div>
+                            <div class="item5-2">
+                                <h3>巴慕达 The Toaster 烤面包<br>机</h3>
+                                <div>¥599</div>
+                                <div>20台</div>
+                                <br>
+                                <h5 class="font">1392</h5><h5>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp申请</h5>
+                                <br>
+                                <h5 class="font">剩余时间2天</h5>
+                            </div>
+                        </div>
+                        <div class="item6">
+                            <img src="../../resource/img2/next.png">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="center-2">
+                    <div class="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;报告精选</div>
+                    <div class="center-2-1">
+                        <div class="item-1">
+
+                        </div>
+                        <div class="item-2">
+                            <img src="../../resource/img2/bg1.jpg" width="100%" height="50%">
+                            <h5>空气净化器里面学问多得惊呆你</h5>
+                            <br>
+                            <h5>，你选对了吗？</h5>
+                            <br>
+                            <h5 >●苏苏 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                            <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                            <img src="../../resource/img2/reply.png"><h6>3</h6>
+                        </div>
+                        <div class="item-3">
+                            <img src="../../resource/img2/bg2.jpg" width="100%" height="50%">
+                            <h5>空气净化器里面学问多得惊呆你</h5>
+                            <h5>，你选对了吗？</h5>
+                            <br>
+                            <h5 >●苏苏 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                            <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                            <img src="../../resource/img2/reply.png"><h6>3</h6>
+                        </div>
+                        <div class="item-4">
+                            <img src="../../resource/img2/bg3.jpg" width="100%" height="50%">
+                            <h5>空气净化器里面学问多得惊呆你</h5>
+                            <br>
+                            <h5>，你选对了吗？</h5>
+                            <br>
+                            <h5 >●苏苏 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                            <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                            <img src="../../resource/img2/reply.png"><h6>3</h6>
+                        </div>
+                        <div class="item-5">
+                            <img src="../../resource/img2/bg4.jpg" width="100%" height="50%">
+                            <h5>空气净化器里面学问多得惊呆你</h5>
+                            <br>
+                            <h5>，你选对了吗？</h5>
+                            <br>
+                            <h5 >●苏苏 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                            <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                            <img src="../../resource/img2/reply.png"><h6>3</h6>
+                        </div>
+                        <div class="item-6"></div>
+                    </div>
+                    <div class="foot"></div>
+                    <div class="center-2-2">
+                        <div class="item-1"></div>
+                        <div class="item-2">
+                            <img src="../../resource/img2/bg1.jpg" width="100%" height="50%">
+                            <h5>空气净化器里面学问多得惊呆你</h5>
+                            <br>
+                            <h5>，你选对了吗？</h5>
+                            <br>
+                            <h5 >●苏苏 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                            <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                            <img src="../../resource/img2/reply.png"><h6>3</h6>
+                        </div>
+                        <div class="item-3">
+                            <img src="../../resource/img2/bg1.jpg" width="100%" height="50%">
+                            <h5>空气净化器里面学问多得惊呆你</h5>
+                            <br>
+                            <h5>，你选对了吗？</h5>
+                            <br>
+                            <h5 >●苏苏 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                            <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                            <img src="../../resource/img2/reply.png"><h6>3</h6>
+                        </div>
+                        <div class="item-4">
+                            <img src="../../resource/img2/bg1.jpg" width="100%" height="50%">
+                            <h5>空气净化器里面学问多得惊呆你</h5>
+                            <br>
+                            <h5>，你选对了吗？</h5>
+                            <br>
+                            <h5 >●苏苏 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                            <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                            <img src="../../resource/img2/reply.png"><h6>3</h6>
+                        </div>
+                        <div class="item-5">
+                            <img src="../../resource/img2/bg1.jpg" width="100%" height="50%">
+                            <h5>空气净化器里面学问多得惊呆你</h5>
+                            <br>
+                            <h5>，你选对了吗？</h5>
+                            <br>
+                            <h5 >●苏苏 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                            <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                            <img src="../../resource/img2/reply.png"><h6>3</h6>
+
+                        </div>
+                        <div class="item-6"></div>
+                    </div>
+
+                </div>
+                <div class="center-3">
+                    <div class="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;导购精选</div>
+
+                    <div class="item-3-1">
+
+                    </div>
+                    <div class="item-3-1">
+                        <img src="../../resource/img2/bg6.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+
+                    </div>
+                    <div class="item-3-1">
+                        <img src="../../resource/img2/bg7.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-3-1">
+                        <img src="../../resource/img2/bg8.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-3-1">
+                        <img src="../../resource/img2/bg5.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 > &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-3-1">
+
+                    </div>
+                </div>
+                <div class="center-4">
+                    <div class="top">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;发现酷玩</div>
+                    <div class="item-4-1"></div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/bg5.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/hot3.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/hot9.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/hot1.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1"></div>
+                    <br>
+
+                    <div class="item-4-1"></div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/bg1.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/bg2.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/bg3.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/bg4.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1"></div>
+                    <br>
+
+                    <div class="item-4-1"></div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/bg5.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/bg6.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/bg7.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/bg8.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1"></div>
+                    <br>
+
+                    <div class="item-4-1"></div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/bg6.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/bg5.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/bg4.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1">
+                        <img src="../../resource/img2/bg3.jpg" width="100%" height="50%">
+                        <h5>空气净化器里面学问多得惊呆你</h5>
+                        <br>
+                        <h5>，你选对了吗？</h5>
+                        <br>
+                        <h5 >¥ 1212 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</h5>
+
+                        <img src="../../resource/img2/zan.png" ><h6>3</h6>
+                        <img src="../../resource/img2/reply.png"><h6>3</h6>
+                    </div>
+                    <div class="item-4-1">
+
+                    </div>
+                    <br>
+
+                </div>
+            </div>
+
+          <div class="footer">
+              <div><img src="../../resource/img2/code.png"></div>
+              <div>
+                  <img src="../../resource/img2/logoImg.jpg">
+                  <br>
+                  全球酷玩使用导购平台 酷.<br>
+                  新奇.好玩.品质<br>
+                              <br>
+
+                  微信添加"jguojguo"
+                  <br>
+                  获取我们的服务
+              </div>
+              <div>
+                  <h3>免费试用</h3>
+                  试用流程<br>
+                  如何提高成功率
+              </div>
+              <div>
+                  <h3>友情链接</h3>
+                  智东西&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WEIBUSI<br>
+                  搜狐IT&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;腾讯科技<br>
+                  搜狐数码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;凤凰科技<br>
+                  凤凰数码&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PConline<br>
+                  泡泡网&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3W咖啡<br>
+                  ZUK社区&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;亿觅emi3<br>
+                  极客公园&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;易迅易启玩<br>
+                  果库
+              </div>
+              <div>
+                  <h3>购买攻略</h3>
+                  美亚海淘教程<br>
+                  日亚海淘教程<br>
+                  海淘转运攻略<br>
+                  kickstarter 众筹购买攻略<br>
+                  indiegogo 众筹购买攻略<br>
+              </div>
+              <div>
+                  <h3>厂商合作</h3>
+                  关于极果<br>
+                  联系我们<br>
+                  商务合作:BD@jiguo.com<br>
+                  CEO邮箱：CEO@jiguo.com
+
+              </div>
+
+          </div>
+        </div>
+    </div>
+</body>
+</html>
